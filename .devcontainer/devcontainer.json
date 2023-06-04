@@ -1,0 +1,12 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+    "name": "Existing Dockerfile",
+    "build": {
+        // Sets the run context to one level up instead of the .devcontainer folder.
+        "context": "..",   // container와 bind mount할 local directory 상대위치 표시
+        // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+        "dockerfile": "./Dockerfile"  // devcontainer.json파일 기준 Dockerfile의 위치와 상대경로를 표시해야 함.
+    },
+    "remoteUser": "node"
+}
